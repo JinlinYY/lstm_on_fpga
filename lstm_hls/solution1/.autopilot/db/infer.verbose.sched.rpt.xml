@@ -1,0 +1,66 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'infer'" level="0">
+<item name = "Date">Fri Mar 28 13:00:08 2025
+</item>
+<item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
+<item name = "Project">lstm_hls</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 9.514, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">16738, 16738, 16738, 16738, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- memset_gate_f">31, 31, 1, -, -, 32, no</column>
+<column name="- memset_gate_i">31, 31, 1, -, -, 32, no</column>
+<column name="- memset_gate_o">31, 31, 1, -, -, 32, no</column>
+<column name="- memset_stat_C">31, 31, 1, -, -, 32, no</column>
+<column name="- memset_C_t">31, 31, 1, -, -, 32, no</column>
+<column name="- memset_h_t">31, 31, 1, -, -, 32, no</column>
+<column name="- Loop 7">16496, 16496, 2062, -, -, 8, no</column>
+<column name=" + Loop 7.1">80, 80, 2, 2, 2, 40, yes</column>
+<column name=" + Loop 7.2">22, 22, 8, 1, 1, 16, yes</column>
+<column name=" + Loop 7.3">60, 60, 31, 2, 2, 16, yes</column>
+<column name=" + Loop 7.4">22, 22, 8, 1, 1, 16, yes</column>
+<column name=" + Loop 7.5">60, 60, 31, 2, 2, 16, yes</column>
+<column name=" + Loop 7.6">22, 22, 8, 1, 1, 16, yes</column>
+<column name=" + Loop 7.7">91, 91, 62, 2, 2, 16, yes</column>
+<column name=" + Loop 7.8">22, 22, 8, 1, 1, 16, yes</column>
+<column name=" + Loop 7.9">60, 60, 31, 2, 2, 16, yes</column>
+<column name=" + Loop 7.10">19, 19, 5, 1, 1, 16, yes</column>
+<column name=" + Loop 7.11">19, 19, 5, 1, 1, 16, yes</column>
+<column name=" + Loop 7.12">22, 22, 8, 1, 1, 16, yes</column>
+<column name=" + Loop 7.13">91, 91, 62, 2, 2, 16, yes</column>
+<column name=" + Loop 7.14">19, 19, 5, 1, 1, 16, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

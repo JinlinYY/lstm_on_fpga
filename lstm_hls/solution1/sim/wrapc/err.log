@@ -1,0 +1,9 @@
+D:/HIT_DLA/dla-master/lab3_student/lab3_student/lstm_hls/main.cpp: In function 'float mnist_app_test_all()':
+D:/HIT_DLA/dla-master/lab3_student/lab3_student/lstm_hls/main.cpp:121:29: error: too few arguments to function 'void infer(float*, float*)'
+   int net_output = infer(buf);
+                             ^
+In file included from D:/HIT_DLA/dla-master/lab3_student/lab3_student/lstm_hls/main.cpp:5:0:
+D:/HIT_DLA/dla-master/lab3_student/lab3_student/lstm_hls/rnn.h:20:6: note: declared here
+ void infer(float input[IMG_SIZE], float res[CLASS_NUM]);
+      ^~~~~
+make: *** [obj/main.cpp_pre.cpp.tb.o] Error 1

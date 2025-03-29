@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="mcc5_lstm_binary.h" path="D:\Project_fpga_yjl\DLA_lstm\mcc5_lstm_binary.h"/>
+    <originFiles name="rnn.cpp" path="D:\Project_fpga_yjl\DLA_lstm\lstm_hls\rnn.cpp"/>
+    <originFiles name="rnn.h" path="D:\Project_fpga_yjl\DLA_lstm\lstm_hls\rnn.h"/>
+    <originFiles name="rnn_top.cpp" path="D:\Project_fpga_yjl\DLA_lstm\lstm_hls\rnn_top.cpp"/>
+    <originFiles name="utils.h" path="D:\Project_fpga_yjl\DLA_lstm\lstm_hls\utils.h"/>
+    <originFiles name="weight.h" path="D:\Project_fpga_yjl\DLA_lstm\weight.h"/>
+    <originFiles name="weight_256.h" path="D:\Project_fpga_yjl\DLA_lstm\weight_256.h"/>
+    <originFiles name="weight_32_mcc5.h" path="D:\Project_fpga_yjl\DLA_lstm\weight_32_mcc5.h"/>
+    <originFiles name="weight_32_mcc5_200.h" path="D:\Project_fpga_yjl\DLA_lstm\lstm_hls\weight_32_mcc5_200.h"/>
+    <originFiles name="weight_32_mcc5_28.h" path="D:\Project_fpga_yjl\DLA_lstm\weight_32_mcc5_28.h"/>
+    <originFiles name="weight_32_mnist.h" path="D:\Project_fpga_yjl\DLA_lstm\lstm_hls\weight_32_mnist.h"/>
+    <originFiles name="weight_64.h" path="D:\Project_fpga_yjl\DLA_lstm\weight_64.h"/>
+    <originFiles name="weight_96.h" path="D:\Project_fpga_yjl\DLA_lstm\weight_96.h"/>
+    <originFiles name="weight_LSTM.h" path="D:\Project_fpga_yjl\DLA_lstm\weight_LSTM.h"/>
+  </source>
+  <testbench>
+    <originFiles name="main.cpp" path="D:\Project_fpga_yjl\DLA_lstm\lstm_hls\main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,112 @@
+// ==============================================================
+// File generated on Fri Mar 28 13:00:23 +0800 2025
+// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+// SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+// IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+// Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+// ==============================================================
+#ifndef __infer_Bias0_o_0_H__
+#define __infer_Bias0_o_0_H__
+
+
+#include <systemc>
+using namespace sc_core;
+using namespace sc_dt;
+
+
+
+
+#include <iostream>
+#include <fstream>
+
+struct infer_Bias0_o_0_ram : public sc_core::sc_module {
+
+  static const unsigned DataWidth = 32;
+  static const unsigned AddressRange = 16;
+  static const unsigned AddressWidth = 4;
+
+//latency = 1
+//input_reg = 1
+//output_reg = 0
+sc_core::sc_in <sc_lv<AddressWidth> > address0;
+sc_core::sc_in <sc_logic> ce0;
+sc_core::sc_out <sc_lv<DataWidth> > q0;
+sc_core::sc_in<sc_logic> reset;
+sc_core::sc_in<bool> clk;
+
+
+sc_lv<DataWidth> ram[AddressRange];
+
+
+   SC_CTOR(infer_Bias0_o_0_ram) {
+        ram[0] = "0b00111110011100000001111110111000";
+        ram[1] = "0b10111110001011100101001000010101";
+        ram[2] = "0b00111110110011000011001111111000";
+        ram[3] = "0b00111110000001111101100011001111";
+        ram[4] = "0b10111110110100110000100111001000";
+        ram[5] = "0b00111111001101100000101110010001";
+        ram[6] = "0b00111111000111110110001011000111";
+        ram[7] = "0b00111110101000000111101001001010";
+        ram[8] = "0b00111110010111100011111101111001";
+        ram[9] = "0b10111110001001000101110110000101";
+        ram[10] = "0b10111110110001110111000010011011";
+        ram[11] = "0b10111110101110010001001110100101";
+        ram[12] = "0b10111110100111001100010101010100";
+        ram[13] = "0b00111110111010000111110111110110";
+        ram[14] = "0b00111110111111111110100000100101";
+        ram[15] = "0b10111101110000101000100100010010";
+
+
+SC_METHOD(prc_write_0);
+  sensitive<<clk.pos();
+   }
+
+
+void prc_write_0()
+{
+    if (ce0.read() == sc_dt::Log_1) 
+    {
+            if(address0.read().is_01() && address0.read().to_uint()<AddressRange)
+              q0 = ram[address0.read().to_uint()];
+            else
+              q0 = sc_lv<DataWidth>();
+    }
+}
+
+
+}; //endmodule
+
+
+SC_MODULE(infer_Bias0_o_0) {
+
+
+static const unsigned DataWidth = 32;
+static const unsigned AddressRange = 16;
+static const unsigned AddressWidth = 4;
+
+sc_core::sc_in <sc_lv<AddressWidth> > address0;
+sc_core::sc_in<sc_logic> ce0;
+sc_core::sc_out <sc_lv<DataWidth> > q0;
+sc_core::sc_in<sc_logic> reset;
+sc_core::sc_in<bool> clk;
+
+
+infer_Bias0_o_0_ram* meminst;
+
+
+SC_CTOR(infer_Bias0_o_0) {
+meminst = new infer_Bias0_o_0_ram("infer_Bias0_o_0_ram");
+meminst->address0(address0);
+meminst->ce0(ce0);
+meminst->q0(q0);
+
+meminst->reset(reset);
+meminst->clk(clk);
+}
+~infer_Bias0_o_0() {
+    delete meminst;
+}
+
+
+};//endmodule
+#endif
